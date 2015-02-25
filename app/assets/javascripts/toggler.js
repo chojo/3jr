@@ -1,14 +1,16 @@
 function init() {
-  // All our toggler functionality goes here
-  var $toggleLinks = $(".detail_toggle");
-  $toggleLinks.click(function(event) {
+  var $toggle_links = $(".detail_toggle");
+  $toggle_links.click(function(event) {
     var $detail = $(this).siblings(".detail");
-    // the rest of our handler goes here
+    if($detail.hasClass("hidden")) {
+      $(this).text("Hide Details");
+    } else {
+      $(this).text("Show Details");
+    }
     $detail.toggleClass("hidden");
-    $(this).text("Hide Details");
     event.preventDefault();
   });
-};
+}
 
 $(function() {
   init();
