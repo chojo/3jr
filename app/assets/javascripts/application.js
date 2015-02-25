@@ -6,7 +6,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery-ui
+//= require toggler
 //= require_tree .
 
 activityData = {1: "Hiking", 2: "Changing History", 
