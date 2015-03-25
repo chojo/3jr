@@ -17,5 +17,15 @@ describe("calculator", function() {
     eval(calculatorFs);
     expect(multiply(2, 3)).toEqual(6);
   }); 
+  
+  it("should return the power of a number", function() {        
+    eval(calculatorFs);
+    expect(power(2, 3)).toEqual(8);
+  }); 
 
+  it("should subtract two numbers", function() {        
+    eval(calculatorFs);
+    var sub = subtract(5);
+    expect(sub(2)).toEqual(3);
+  }); 
 });
