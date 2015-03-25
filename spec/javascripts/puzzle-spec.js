@@ -13,4 +13,17 @@ describe("puzzle", function() {
     expect(findSolution(24)).toEqual("(((1 * 3) + 5) * 3)");
   }); 
 
+  it("should check if a given integer number is even", function() {        
+    eval(puzzleFs);
+    expect(isEven(24)).toEqual(true);
+    expect(isEven(55)).toEqual(false);
+    expect(isEven(-1)).toEqual(false);
+  }); 
+  
+  it("should print the quantity of a given character", function() {        
+    eval(puzzleFs);
+    expect(countChar("JoANNA", "N")).toEqual(2);
+    expect(countChar("JoANNA", "J")).toEqual(1);
+    expect(countBs("BMBXBX", "B")).toEqual(3);
+  }); 
 });

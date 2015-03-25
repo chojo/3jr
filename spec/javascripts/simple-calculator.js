@@ -11,9 +11,10 @@ var power = function(base, exponent) {
     return 1;
   else
     var result = 1;
-    for (var count = 0; count < exponent; count++)
+    for (var count = 0; count < exponent; count++) {
       result *= base;
-      return result;
+    }
+    return result;
 };
 
 var subtract = function (first) {
