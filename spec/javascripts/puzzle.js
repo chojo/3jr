@@ -5,7 +5,7 @@
 // For example, the number 13 could be reached by first multiplying by 3 and
 // then adding 5 twice, whereas the number 15 cannot be reached at all.
 
-var findSolution = function (target) {
+var findSolution = function findSolution(target) {
   function find(start, history) {
    if (start === target)
     return history;
@@ -17,7 +17,7 @@ var findSolution = function (target) {
   return find(1, "1");
 };
 
-var isEven = function (number) {
+var isEven = function isEven(number) {
   number = Math.abs(number);
   if (number === 0)
     return true;
@@ -44,13 +44,13 @@ var isEven = function (number) {
 // (rather than counting only uppercase “B” characters). Rewrite countBs to make
 // use of this new function.
 
-var countBs = function (string) {
+var countBs = function countBs(string) {
   return countChar(string, "B");
 };
 //console.log(countBs("BBC"));
 // → 2
 
-var countChar = function (string, char) {
+var countChar = function countChar(string, char) {
   if (string.length === 0) {
     return 0;
   } else {
